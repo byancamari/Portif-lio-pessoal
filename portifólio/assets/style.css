@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans JP', sans-serif, Arial;
+    box-sizing: border-box; 
+}
+
+nav {
+    background-color: #f79eb1;
+    font-weight: 500;
+    position: fixed;
+    width: 100%;
+    z-index: 1000; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+nav ul li {
+    padding: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    flex-direction: column; 
+}
+
+header div#img- {
+    display: flex;
+    justify-content: center;
+}
+
+header div p {
+    font-size: 2vw;
+    font-weight: 700;
+    color: #f79eb1;
+}
+
+header div span {
+    font-size: 1vw;
+    font-weight: 500;
+    color: #f79eb1;
+}
+
+header div#img- img {
+    width: 60%;
+    max-width: 300px; 
+}
+
+section#sobre-mim {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    background-color: #f79eb1;
+    flex-direction: column; 
+}
+
+section#sobre-mim div img {
+    width: 60%;
+    max-width: 200px; 
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+section#sobre-mim div p {
+    font-size: 1.1vw;
+    text-align: justify;
+    color: #fff;
+    line-height: 2.5rem;
+    max-width: 600px; 
+}
+
+section#projetos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    flex-wrap: wrap;
+}
+
+section#projetos div {
+    width: 20rem;
+    padding: 2rem;
+    margin: 1rem; 
+}
+
+section#projetos div img {
+    display: block;
+    margin: auto;
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+section#projetos div h2 {
+    text-align: center;
+    padding: 1rem;
+}
+
+section#projetos div p {
+    text-align: justify;
+}
+
+section#projetos div button {
+    border: 1px solid #3359ec;
+    background-color: #fff;
+    color: #3359ec;
+    padding: 1rem;
+    font-size: .8vw;
+    font-weight: 600;
+    border-radius: .5rem;
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: .6s ease-out;
+}
+
+section#projetos div button:hover {
+    background-color: #f79eb1;
+    color: #fff;
+    transform: scale(1.2);
+}
+
+section#contato {
+    background-color: #f79eb1;
+    color: #fff;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    header div p {
+        font-size: 10vw; 
+    }
+
+    header div span {
+        font-size: 3vw; 
+    }
+
+    section#sobre-mim div p {
+        font-size: 3vw; 
+    }
+
+    section#projetos div {
+        width: 90%;
+    }
+
+    section#projetos div button {
+        font-size: 2.5vw; 
+    }
+}
+
+@media (max-width: 480px) {
+    header div p {
+        font-size: 5vw;
+    }
+
+    header div span {
+        font-size: 4vw; 
+    }
+
+    section#sobre-mim div p {
+        font-size: 4vw; 
+    }
+
+    nav ul li {
+        padding: 0.5rem; 
+    }
+
+    section#projetos div {
+        width: 100%; 
+    }
+}
